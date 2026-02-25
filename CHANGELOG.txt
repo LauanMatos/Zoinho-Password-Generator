@@ -1,0 +1,4 @@
+v1.0 - 25/02/2026
+- Versão inicial do gerador
+- Barra de progresso
+- Medidor de força por tamanho
