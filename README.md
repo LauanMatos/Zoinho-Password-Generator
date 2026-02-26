@@ -46,6 +46,7 @@ Depois é só responder as perguntas no terminal.
 
 Sou Lauan, tô aprendendo Python e cibersegurança. Esse é meu primeiro projeto no GitHub.
 
+<<<<<<< HEAD
 ## ⭐ Se chegou até aqui
 
 Dá uma estrela se quiser, mas não precisa. Já tô feliz de ter conseguido fazer funcionar.
