@@ -20,7 +20,7 @@ while True:
     print("-" * 60)
     sleep(1.5)
 
-    Numbers = input("👽: Do You Want Numbers S/N: ")
+    numbers = input("👽: Do You Want Numbers S/N: ")
     print("-" * 60)
     sleep(1.5)
 
@@ -30,7 +30,7 @@ while True:
 
     if uppercase.lower() == "s":
         characters = characters + string.ascii_uppercase
-    if Numbers.lower() == "s":
+    if numbers.lower() == "s":
         characters = characters + string.digits
     if simbols.lower() == "s":
         characters = characters + string.punctuation
@@ -40,16 +40,18 @@ while True:
     for i in range(size):
         password = password + random.choice(characters)
 
-    def password_generator(time_total=5, size2=50):
+    def loadingbar(time_total=5, size2=50):
         print("👽: Password Generator...")
         print("-" * 60)
         sleep(2.0)
+
         for i in range(size2 + 1):
             porcentagem = int((i / size2) * 100)
 
             barra = "█" * i + "░" * (size2 - i)
             print(f"\r[{barra}] {porcentagem}%", end="", flush=True)
             time.sleep(time_total / size2)
+            
         print("")
         print("-" * 60)
         print("👽: Generated Password ")
@@ -58,7 +60,7 @@ while True:
         print(f"👽: Password: {password}")
         print("-" * 60)
 
-    password_generator(5)
+    loadingbar(5)
 
     def force_meter(size):
         if size < 11:
